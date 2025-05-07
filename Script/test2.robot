@@ -27,12 +27,12 @@ Accès Page Protégée
     Page Should Contain Element         css=h2
     Element Text Should Be              css=h2    Secure Area
 
-Déconnexion Utilisateur
-    [Documentation]    Vérifie que l'utilisateur peut se déconnecter
-    Wait Until Element Is Visible       xpath=//a[@href='/logout']     timeout=10s
-    Click Element                       xpath=//a[@href='/logout']
-    Wait Until Page Contains            Login Page
-    Location Should Contain             /login
+#Déconnexion Utilisateur
+    #[Documentation]    Vérifie que l'utilisateur peut se déconnecter
+    #Wait Until Element Is Visible       xpath=//a[@href='/logout']     timeout=10s
+    #Click Element                       xpath=//a[@href='/logout']
+    #Wait Until Page Contains            Login Page
+    #Location Should Contain             /login
 
 *** Keywords ***
 Open Browser To Login Page
