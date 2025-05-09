@@ -29,9 +29,8 @@ Accès Page Protégée
     Page Should Contain Element         css=h2
     Element Text Should Be              css=h2    Secure Area
 
-*** Test Cases ***
 
-Test Login With Invalid Credentials
+Login With Invalid Credentials
     Go To    ${HOMEPAGE} 
     Click Link    Form Authentication
     Input Text    id=username    invalid
@@ -40,7 +39,7 @@ Test Login With Invalid Credentials
     Wait Until Page Contains    Your username is invalid    timeout=5s
 
 
-Test Ajouter Et Supprimer Des Éléments
+Ajouter Et Supprimer Des Éléments
     Go To    ${HOMEPAGE} 
     Click Link    Add/Remove Elements
     Log    🔄 Ajout de 3 éléments...
